@@ -213,6 +213,7 @@ header .right-side-menu .sub-menu a:hover{
     width: 50rem;
     height: 70rem;
     margin-left: 5rem;
+    border-radius: 5rem;
 }
 
 
@@ -496,3 +497,159 @@ footer div a{
     margin-left: 1rem;
 }
 
+
+/*responsive layout start here*/
+@media only screen and (max-width:770px){
+    header, .hero-main-section, .common-section{
+        padding: 0 5rem;
+    }
+
+    header nav{
+        padding-top: 1rem;
+        display: flex;
+        flex-flow:column;
+        align-items:flex-start;
+    }
+
+    header nav .left-side-menu{
+        width: 100%;
+        display: block;
+        order: 2;
+     
+    }
+
+    header nav .left-side-menu .sub-menu{
+        width: 100%;
+    }
+
+    header nav .left-side-menu img{
+        display:block;
+        width: 100%;
+    }
+
+    header nav .right-side-menu{
+        text-align: center;
+        margin-left: 25rem;
+        text-transform: uppercase;
+    }
+
+    header nav .right-side-menu .sub-menu button{
+        font-size: 2rem;
+        padding:0.2rem 8rem;
+        text-transform: uppercase;
+    }
+
+    
+
+    /*main hero section*/
+    .hero-main-section{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-flow:column;
+        margin-top: 10rem;
+    }
+
+    .hero-main-section .hero-left-side{
+        order: 2;
+        width: 100%;
+    }
+
+    .hero-main-section .hero-left-side h1{
+        width: 35rem;
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-main-section .hero-left-side p{
+        width: 35rem;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .hero-main-section .hero-left-side .button-group {
+        display:flex;
+
+    }
+
+    .hero-main-section .hero-right-side{
+        order: 1;
+        /*width: 100%;*/
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        
+    }
+
+    .hero-main-section .hero-right-side img{
+        width: 35rem;
+        height: 35rem;
+        margin: 0;
+        margin-top: 4rem;
+    }
+
+
+    /*section two css start*/
+    #section-two{
+        display: flex;
+        flex-flow:column;
+    }
+    #section-two .left-side img{
+        margin-top: 20rem;
+        width: 25rem;
+        height: 35rem;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .common-section .left-side figure{
+        background: none;
+    }
+
+    #section-two .right-side{
+        margin-bottom: 20rem;
+    }
+
+    #section-two .right-side h2{
+        width: 35rem;
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .third-section{
+        margin-top: 40rem;
+        width: 100%;
+        height: 135rem;
+    }
+
+    .third-section .section-third-task{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #section-four{
+        width: 100%;
+        grid-template-columns:repeat(1,1fr);
+    }
+
+    #section-four .left-side img{
+        width: 35rem;
+        height: 35rem;
+        
+    }
+
+
+    #section-five{
+        grid-template-columns:repeat(1,1fr);
+        margin-top: 50rem;
+        width: 100%;
+    }
+
+    #section-five .left-side img{
+        width: 35rem;
+        height: 35rem;
+    }
+
+    
+}
